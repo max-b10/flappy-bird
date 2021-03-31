@@ -1,48 +1,72 @@
 *{
     padding:0;
     margin:0;
-    /* display: border-box; */
 }
-/* body{
-    background-image: url('/images/flappy-bird-background.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-} */
-
-
-.game{
-    width: 400px;
-    height: 500px;
-    margin: 50px auto;
-    background-color: #95f2ff;
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
 }
-.obstacle{
+.border-left {
+    position:  relative;
     width: 50px;
-    height: 500px;
-    background-color: black;
-    border: none;
-    position: relative;
-    left: 400px;
-    animation: obstacle 3s infinite linear;
-}
-@keyframes obstacle{
-    0%{left:400px}
-    100%{left:-50px}
-}
-.gap{
-    width: 50px;
-    height: 150px;
+    height: 790px;
+    left: -175px;
     background-color: white;
+    z-index: +2;
+}
+.border-right {
     position: relative;
-    left: 400px;
-    top: -500px;
-    animation: block 2s infinite linear;
+    background-color: white;
+    width: 50px;
+    height: 790px;
+    z-index: +2;
+    left: 175px;
+}
+
+.border-top {
+    position:  absolute;
+    background-color: white;
+    width: 660px;
+    height: 100px;
+    z-index: +2;
+    top: -100px;
+}
+.game-container{
+    position: absolute;
+    width: 350px;
+    height: 500px;
+;}
+.sky{
+    position: absolute;
+    background-color: skyblue;
+    width: 350px;
+    height: 400px;
+}
+.ground{
+    position: absolute;
+    background-color: brown;
+    width: 350px;
+    height: 130px;
+    top: 400px;
+    z-index:1;
 }
 .bird{
-    width: 20px;
-    height: 20px;
-    background-color: rgb(255, 0, 0);
     position: absolute;
-    top: 100px;
-    border-radius: 50%;
+    background-color: yellow;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+}
+.bottom-obstacle{
+    position: absolute;
+    background-color: grey;
+    width: 50px;
+    height: 180px;
+}
+.top-obstacle{
+    position: absolute;
+    background-color: grey;
+    width: 50px;
+    height: 180px;
 }
