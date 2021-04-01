@@ -26,7 +26,7 @@ body{
 
 .border-top {
     position:  absolute;
-    background-color: white;
+    background-color: rgb(216, 115, 115);
     width: 660px;
     height: 100px;
     z-index: +2;
