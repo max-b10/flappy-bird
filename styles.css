@@ -1,23 +1,25 @@
 *{
     padding:0;
     margin:0;
+    font-family: 'Press Start 2P', cursive;
 }
 body{
     display:flex;
     justify-content: center;
     align-items: center;
+    background-color: #654e56;
 }
 .border-left {
     position:  relative;
     width: 50px;
     height: 790px;
     left: -175px;
-    background-color: white;
+    background-color: #654e56;
     z-index: +2;
 }
 .border-right {
     position: relative;
-    background-color: white;
+    background-color: #654e56;
     width: 50px;
     height: 790px;
     z-index: +2;
@@ -26,47 +28,90 @@ body{
 
 .border-top {
     position:  absolute;
-    background-color: rgb(216, 115, 115);
-    width: 660px;
+    background-color: #654e56;
+    width: 350px;
     height: 100px;
     z-index: +2;
     top: -100px;
 }
+.start-button{
+    background-color: #2A8F9B;
+    color: white;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+.start-button:active {
+    -ms-transform: translateY(4px);
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
+}
+.player-score{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background-color: #2A8F9B;
+    color:white;
+    height: 100%;
+    font-size: 30px;
+}
+.restart-button{
+    position:relative;
+    background-color: white;
+    left: 120px;
+    top: 185px;
+    align-items: center;
+    z-index: 1000;
+    color: black;
+    padding: 2px 4px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.restart-button:active {
+    -ms-transform: translateY(4px);
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
+}
 .game-container{
     position: absolute;
     width: 350px;
-    height: 500px;
-;}
+    height: 500px;}
 .sky{
     position: absolute;
-    background-color: skyblue;
+    background-image: url('/images/flappy-bird-background.jpg') ;
+    background-size: cover;
     width: 350px;
     height: 400px;
 }
 .ground{
     position: absolute;
-    background-color: brown;
+    background-color: #D4AC57;
     width: 350px;
-    height: 130px;
+    height: 100px;
     top: 400px;
     z-index:1;
 }
 .bird{
     position: absolute;
-    background-color: yellow;
-    width: 50px;
-    height: 50px;
+    background-image: url('/images/flappy-bird.png');
+    width: 60px;
+    height: 45px;
     border-radius: 50px;
 }
 .bottom-obstacle{
     position: absolute;
-    background-color: grey;
+    background-image: url('/images/flappy-bird-pipe.png') ;
     width: 50px;
     height: 180px;
 }
 .top-obstacle{
     position: absolute;
-    background-color: grey;
+    background-image: url('/images/flappy-bird-pipe.png') ;
+    transform: rotate(180deg);
     width: 50px;
     height: 180px;
 }
