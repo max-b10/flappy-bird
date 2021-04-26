@@ -10,9 +10,6 @@ body{
     background-color: #654e56;
 }
 .nav{
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
     position: fixed;
     top:0;
     left: 5px;
@@ -21,13 +18,17 @@ body{
     height: 40px;
 }
 .return-button{
-    background-color: #654e56;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    background-color: #2A8F9B;
     color: black;
     margin: .5rem 2rem;
     font-size: .75rem;
     outline: none;
     border: none;
-    /* padding: .5rem 1rem; */
+    padding: .5rem .5rem;
+    border-radius: 2px;
 }
 .return-button:hover{
     color: rgb(42, 42, 42);
@@ -35,6 +36,8 @@ body{
 }
 #home{
     height: 20px;
+    margin-right: 5px;
+
 }
 .border-left {
     position:  relative;
