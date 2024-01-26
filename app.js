@@ -8,7 +8,7 @@ const playerScore = document.createElement("div");
 playerScore.classList.add("player-score");
 
 portfolioButton.addEventListener("click", () => {
-  window.location.replace("https://portfoliomax.netlify.app");
+  window.location.replace("https://maxbungay.com");
 });
 
 // Hide restart button until game over:
